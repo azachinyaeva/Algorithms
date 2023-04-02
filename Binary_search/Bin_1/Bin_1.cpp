@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <chrono>
 
 bool search(int* arr, int size, int ref) {
 
