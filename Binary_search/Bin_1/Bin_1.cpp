@@ -14,7 +14,6 @@ bool search(int* arr, int size, int ref) {
             flag = true;
             return flag;
         }
-
         else {
             right = middle;
         }
@@ -25,26 +24,16 @@ bool search(int* arr, int size, int ref) {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    int n, k;
-    std::cout << "Введите n: ";
-    std::cin >> n;
-    std::cout << "Введите k: ";
-    std::cin >> k;
-    std::cout << "Введите " << n << " чисел: ";
-
-    int* arr_n = new int[n]();
-    int* arr_k = new int[k]();
+    const int n = 10;
+    const int k = 5;
+    int arr[n] = {};
     for (int i = 0; i < n; i++) {
-        std::cin >> arr_n[i];
+        std::cin >> arr[i];
     }
-    std::cout << "Введите " << k << " чисел: ";
+    int temp;
     for (int i = 0; i < k; i++) {
-        std::cin >> arr_k[i];
-    }
-
-    for (int i = 0; i < k; i++) {
-
-        if (search(arr_n, n, arr_k[i])) {
+        std::cin >> temp;
+        if (search(arr, n, temp)) {
             std::cout << "YES \n";
         }
         else {
