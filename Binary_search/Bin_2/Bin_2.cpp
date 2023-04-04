@@ -19,9 +19,9 @@ int search(int* arr, int size, int ref) {
 int main()
 {
     setlocale(LC_ALL, "Russian");
-    const int n = 5;
-    const int k = 5;
-    int arr[n] = {};
+    int arr[100000]{};
+    int n, k;
+    std::cin >> n >> k;
     for (int i = 0; i < n; i++) {
         std::cin >> arr[i];
     }
