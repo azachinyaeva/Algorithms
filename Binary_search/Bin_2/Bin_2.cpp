@@ -2,15 +2,15 @@
 
 int search(int* arr, int size, int ref) {
 
-    int left = -1;
+    int left = 0;
     int right = size;
     while ((right - left) > 1) {
         int middle = (left + right) / 2;
-        if (arr[middle] <= ref) {
-            left = middle;
+        if (arr[middle] > ref) {
+            right = middle;
         }
         else {
-            right = middle;
+            left = middle;
         }
     }
     return arr[left];
