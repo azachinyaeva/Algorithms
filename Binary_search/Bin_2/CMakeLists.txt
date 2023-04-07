@@ -2,4 +2,4 @@
 
 project (Bin_2)
 
-add_executable (Bin_2 "Bin_2.cpp")
+add_executable (Bin_2 "Bin_2.cpp" "Source1.cpp")
