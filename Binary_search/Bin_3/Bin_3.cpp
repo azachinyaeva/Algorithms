@@ -21,7 +21,7 @@ void quick_sort(int* arr, int size)
 
 int search(int* arr, int size, int num) {
 	int left = 0;
-	int right = size;
+	int right = size-1;
 	int count = 0;
 	while ( (right-left) > 1) 
 	{
