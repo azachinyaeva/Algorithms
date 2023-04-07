@@ -30,7 +30,8 @@ int search(int* arr, int size, int num) {
 		{
 			right = middle;
 		}
-		else {
+		else 
+		{
 			left = middle;
 		}
 	}
@@ -43,9 +44,9 @@ int search(int* arr, int size, int num) {
 
 int main() {
 
-	int arr[100000]{};
 	int n, m;
 	std::cin >> n;
+	int* arr = new int [n] {};
 	for (int i = 0; i < n; i++) {
 		std::cin >> arr[i];
 	}
@@ -56,4 +57,5 @@ int main() {
 		std::cin >> temp;
 		std::cout << search(arr, n, temp);
 	}
+	delete[] arr;
 }
