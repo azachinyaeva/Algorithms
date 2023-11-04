@@ -7,7 +7,7 @@ int search(int* arr, int size, int k) {
 	{
 		int middle = (left + right) / 2;
 		int count = 0;
-		for (int i = 0; i < size; i++) 
+		for (int i = 0; i < size; ++i) 
 		{
 			count += arr[i] / middle;
 		}
@@ -28,7 +28,7 @@ int main() {
 	int n, k;
 	std::cin >> n >> k;
 	int* arr = new int [n] {};
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n; ++i) {
 		std::cin >> arr[i];
 	}
 	std::cout << search(arr, n, k);
